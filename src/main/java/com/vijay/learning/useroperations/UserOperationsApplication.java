@@ -6,6 +6,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
+@EnableAspectJAutoProxy
 public class UserOperationsApplication {
 
 	private static final Logger log = LoggerFactory.getLogger(UserOperationsApplication.class);

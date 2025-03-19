@@ -1,8 +1,8 @@
 package com.vijay.learning.useroperations.model;
 
-
 import jakarta.persistence.*;
 import lombok.*;
+
 
 @Getter
 @Setter
@@ -10,16 +10,17 @@ import lombok.*;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "USER_DETAILS")
-public class User {
+@Table(name = "EMPLOYEE_DETAILS")
+public class Employee {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String name;
-    private Integer age;
-    private String gender;
-    private String department;
-    private String email;
-    private Integer yearOfJoining;
 
+    private String firstName;
+    private String lastName;
+    private String email;
+    private String department;
+    private Double salary;
+    private String designation;
 }
